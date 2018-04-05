@@ -71,6 +71,7 @@
 * Each instruction has an expected runtime, which is specified by clock cycles, as shown in the table.
 * The runtime of a program is **the summation of the clock cycles of all instructions.**
 * Example: the following code has 90 clock cycles
+
     MOV r0, 3        **10 cc**
 
     MOV r1, 5        **10 cc**
