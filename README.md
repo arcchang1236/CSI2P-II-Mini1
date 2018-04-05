@@ -79,8 +79,13 @@
 ## Error handler
 
 * If the expression is **illegal**, such as
-    **x = + 3 % 5**
-    **y = (x+)**
+    * x = 5 +
+    * y = 7 / 0
+    * z = --2
+    * ... and so on
+
+* **You should consider all kinds of possibilities.**
+
 * Your final output should be **EXIT 1**
 
 ## Contest
