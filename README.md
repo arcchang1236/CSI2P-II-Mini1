@@ -51,12 +51,19 @@
 
 * **Input: x = z + 5**
 * **Output** :
+
     **MOV r0, [0]**
+
     **MOV r1, [4]**
-    **MOV r2, [8]** 
+
+    **MOV r2, [8]**
+
     **MOV r3, 5**
+
     **ADD r3, r2**
+
     **MOV r0, r3**
+
     **EXIT 0**
 
 ## Total clock cycles
