@@ -18,7 +18,7 @@
 
 ## A Simple Calculator - Interpreter Version
 
-![](https://i.imgur.com/efl3fza.png)
+![Imgur](https://i.imgur.com/PgelT14.png)
 
 ## The Compilation Process
 
@@ -29,27 +29,38 @@ What is **Code Generator** ? You may refer to [10950](http://140.114.86.238/prob
 
 ## The Lexical Analyzer
 The lexical analysis is the process of recognizing **which string of symbols** from the source program represent **a single entity called token** and **identifying types of them** such as *numeric values, words, arithmetic operators, and so on*.
-```
+
+``` cpp
 static TokenSet getToken(void);
 ```
+
 This function does three things:
 * Extracts the *next token* from the input string
 * Stores the token in *char lexeme[MAXLEN]*
 * Identifies the token's type
-```
+
+``` cpp
 typedef enum {UNKNOWN, END, INT, ID, ADDSUB, MULDIV, ASSIGN, LPAREN, RPAREN} TokenSet;
 ```
+
 ## The Parser
 Group tokens into statements based on a set of rules, collectively called a grammar.
 
 >> statement&nbsp;&nbsp;&nbsp;:= ENDFILE | END | expr END
+
 >> expr&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:= term expr_tail
+
 >> expr_tail&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:= ADDSUB term expr_tail | NiL
+
 >> term&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:= factor term_tail
+
 >> term_tail&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:= MULDIV factor term_tail | NiL
+
 >> factor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:= INT | ADDSUB INT 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| ID | ADDSUB ID
+
 >>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| LPAREN expr RPAREN
+
 >> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| ID ASSIGN expr
 
 

@@ -91,11 +91,11 @@
 
 ## Submission / Demo
 
-- *** Submission Deadline: 4/20(五) 中午 12:00 ***
+- **Submission Deadline: 4/20(五) 中午 12:00**
 	- 上傳至iLMS
 	- 命名為 ***學號.c***
 
-- *** Demo 時間: 4/20(五) 下午 1:20 ~ 3:30 ***
+- **Demo 時間: 4/20(五) 下午 1:20 ~ 3:30**
     - 請準時出席課堂，並攜帶包含檔案的USB，我們會唱名請大家來臺前Demo
     - 請用跟iLMS上傳的同一份code進行Demo，若不相同視為零分
     - No cheating!
