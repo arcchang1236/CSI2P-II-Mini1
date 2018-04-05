@@ -7,7 +7,7 @@
 
 2. Replace the current **evaluateTree()** to generate assembly code during the pre-order tree traversal.
 
-3. If you encounter any violation of arithmetic rules, you should call **error()** to terminate the program. The following is some examples:
+3. If you encounter any violation of arithmetic rules, you should call **error()** to terminate the program. **You should consider all kinds of possibilities.** The following is some examples:
 
     * x = 5 +
     * y = 7 / 0

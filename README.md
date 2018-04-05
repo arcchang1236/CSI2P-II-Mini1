@@ -86,8 +86,8 @@
 ## Contest
 
 * The project has 2 parts:
-    1. The **basic test cases** will be provided by TAs
-    2. The contest: The code with the **less total clock cycles** is better. Five top winners will **get extra credits.**
+    1. The **5 basic testcases** will be provided by TAs
+    2. The contest: There will be **20 testcases** at demo time, each represents 5 points. Besides, the code with the **less total clock cycles** is better. Five top winners will **get extra credits**.
 
 ## Submission / Demo
 
@@ -96,7 +96,7 @@
 	- 命名為 ***學號.c***
 
 - **Demo 時間: 4/20(五) 下午 1:20 ~ 3:30**
-    - 請準時出席課堂，並攜帶包含檔案的USB，我們會唱名請大家來臺前Demo
-    - 請用跟iLMS上傳的同一份code進行Demo，若不相同視為零分
-    - No cheating!
+    - 請準時出席課堂，我們會唱名請大家來臺前，會使用iLMS上傳的code來Demo
+    - Demo完成後會公布過的測資數與cycle數
+    - 不要使用別人的code，若抓到抄襲直接零分並依校徽處置
 
