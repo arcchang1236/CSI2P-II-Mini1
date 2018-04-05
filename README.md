@@ -89,8 +89,15 @@
     1. The **basic test cases** will be provided by TAs
     2. The contest: The code with the **less total clock cycles** is better. Five top winners will **get extra credits.**
 
-## Submission
+## Submission / Demo
 
-You only need to submit your ***main.c*** to iLMS
+*** Submission Deadline: 4/20(五) 13:00 ***
 
-***Deadline:  Thr. 4/19 23:59 p.m.***
+- 命名為 ***學號.c***
+
+*** Demo 時間: 4/20(五) 13:20 ~ 15:30 ***
+
+- 當天請各位準時出席課堂，並攜帶包含你的檔案的USB，我們會唱名請大家來臺前Demo
+- 請使用跟iLMS上傳的同一份code進行Demo，我們會進行查驗
+- No cheating!
+
