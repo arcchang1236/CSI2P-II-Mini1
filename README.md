@@ -52,17 +52,19 @@
 * **Input: x = z + 5**
 * **Output** :
 
+    **MOV r0, [8]**
+
+    **MOV r1, 5**
+
+    **ADD r0, r1**
+
+    **MOV [0], r0**
+
     **MOV r0, [0]**
 
     **MOV r1, [4]**
 
-    **MOV r2, [8]**
-
-    **MOV r3, 5**
-
-    **ADD r3, r2**
-
-    **MOV r0, r3**
+    **MOV r1, [8]**
 
     **EXIT 0**
 
@@ -70,19 +72,23 @@
 
 * Each instruction has an expected runtime, which is specified by clock cycles, as shown in the table.
 * The runtime of a program is **the summation of the clock cycles of all instructions.**
-* Example: the following code has 90 clock cycles
+* Example: the following code has 1040 clock cycles
 
-    MOV r0, 3        **10 cc**
+    MOV r0, [8]		**200 cc**
 
-    MOV r1, 5        **10 cc**
+    MOV r1, 5		**10 cc**
 
-    MUL r0, r1       **30 cc**
+    ADD r0, r1		**10 cc**
 
-    MOV r1, 0        **10 cc**
+    MOV [0], r0		**200 cc**
 
-    MOV r2, 0        **10 cc**
+    MOV r0, [0]		**200 cc**
 
-    EXIT 0           **20 cc**
+    MOV r1, [4]		**200 cc**
+
+    MOV r1, [8]		**200 cc**
+
+    EXIT 0			**20 cc**
 
 ## Error handler
 
